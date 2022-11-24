@@ -1,0 +1,252 @@
+/*.........general........*/
+html {
+  overflow-x: clip;
+  font-family: IBM Plex Sans;
+}
+body {
+  background-image: url("assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 480px auto;
+  background-position: 60px -160px;
+  margin: 0;
+}
+p {
+  font-weight: 400;
+}
+/*............header.........*/
+header {
+  width: 87.2%;
+  margin: 0 auto;
+}
+header svg {
+  margin-top: 2.5rem;
+}
+h1 {
+  margin-top: 4rem;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4545454680919647px;
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 20px;
+  font-family: IBM Plex Sans;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 0;
+}
+/*...............main..............*/
+main {
+  margin-top: 166px;
+  background-color: rgba(25, 24, 38, 1);
+  border-radius: 12px;
+  background-image: url("assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-size: 74.6vw auto;
+  background-position: 12.8vw 0;
+}
+main img {
+  width: 55.7%;
+  position: relative;
+  top: -98px;
+  left: 21.51%;
+}
+#info {
+  background-color: rgba(250, 116, 83, 1);
+  border-radius: 12px;
+  padding: 48px 36px;
+  color: white;
+  max-width: 399px;
+  margin: -50px auto 0 auto;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+#info p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+strong {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  margin: 0 0 0 6px;
+}
+span {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.20000000298023224px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 32px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+}
+#info div {
+  width: 296px;
+  height: 61px;
+  background-color: rgba(25, 24, 38, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 11px auto;
+}
+#ios p,
+#Android p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18000000715255737px;
+  margin: 0 0 0 7.92px;
+  padding: 0;
+  cursor: pointer;
+}
+#info #Android {
+  background-color: white;
+  color: rgba(25, 24, 38, 1);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+#ios:hover {
+  background-color: rgba(102, 226, 220, 1);
+}
+#info #Android:hover {
+  background-color: rgba(255, 185, 100, 1);
+}
+/*.............footer..........*/
+footer {
+  padding: 64px 6.4% 81.5px 6.4%;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin: 32px 0 0 0;
+}
+footer b {
+  font-weight: 700;
+}
+footer div svg:nth-of-type(2) {
+  margin: 64px 20px 0 20px;
+}
+footer div svg {
+  cursor: pointer;
+}
+footer div svg:hover {
+  filter: invert(54%) sepia(90%) saturate(914%) hue-rotate(325deg)
+    brightness(98%) contrast(99%);
+}
+
+/*.....media query for tablet.....*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url("assets/bg-main-tablet.png") -38.2vw -19.79vw no-repeat,
+      url("assets/bg-pattern-1.svg") 69.66vw -4.2vw no-repeat;
+    background-size: min(136vw, 1439px), min(34.6vw, 312px);
+    padding: 0 5% 0 5%;
+  }
+  header {
+    width: 67.7%;
+    margin: 0;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.7272727489471436px;
+    margin-top: min(12.3vw, 127px);
+  }
+  header p {
+    margin-top: min(3.64vw, 40px);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+  main {
+    margin-top: min(32.4vw, 321px);
+    background-size: min(36.45vw, 312px) auto;
+    background-position: min(29.8vw, 336px) -30px;
+    height: 600px;
+  }
+  main img {
+    width: min(35vw, 312px);
+    top: max(-213px, -18vw);
+    left: min(8.3vw, 102px);
+  }
+  #info {
+    margin: -410px 0 0 31vw;
+    z-index: 9999;
+    position: relative;
+  }
+  footer {
+    padding: min(23.69vw, 201px) 0 min(11vw, 91px) 0;
+  }
+  footer p {
+    width: 47.6vw;
+    display: inline-block;
+  }
+  footer div svg:nth-of-type(2) {
+    margin: 0 20px 0 20px;
+  }
+  footer div {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 25.78vw;
+  }
+  #logo {
+    display: block;
+  }
+}
+/*............media query for desktop........*/
+@media screen and (min-width: 1440px) {
+  body {
+    background: url("assets/bg-pattern-1.svg") 78.33vw -4.2vw no-repeat,
+      url("assets/bg-main-desktop.png") -250px -250px no-repeat;
+    background-size: 21.6vw, 1800px;
+    padding: 0 11.45% 0 11.45%;
+  }
+  header {
+    width: 80%;
+  }
+  h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+  }
+  header p {
+    margin-top: min(3.64vw, 40px);
+    font-size: 20px;
+    line-height: 34px;
+    width: 57.29vw;
+  }
+
+  #info {
+    margin: -548px 0 0 569px;
+  }
+  footer p {
+    width: 25.41vw;
+  }
+  footer div {
+    left: 22.93vw;
+  }
+  #logo {
+    display: inline-block;
+    margin-right: 9.5vw;
+  }
+}
